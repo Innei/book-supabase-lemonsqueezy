@@ -1,0 +1,9 @@
+{
+  "name": "@book/supabase",
+  "exports": {
+    ".": {
+      "react-server": "./server.ts",
+      "default": "./client.ts"
+    }
+  }
+}

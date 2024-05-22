@@ -4,7 +4,6 @@ import { notFound } from 'next/navigation'
 import type { TGitHistory } from '~/lib/git'
 
 import { buildSectionData as _buildSectionData } from '~/core'
-import { getFileGitHistory } from '~/lib/git'
 import { cloneDeep } from '~/lib/lodash'
 
 const buildSectionData = cache(_buildSectionData)
@@ -47,20 +46,20 @@ export const getServerProps = cache(
     }
 
     const fileOriginPath = join('markdown/', path2SectionMap[path].rawFilePath)
-    const histories = await getFileGitHistory(fileOriginPath)
+    // const histories = await getFileGitHistory(fileOriginPath)
 
     const historyList = [] as TGitHistory[]
-    if (histories) {
-      histories.split('\n').forEach((line) => {
-        const [hash, author_name, time, commit_message] = line.split(' ')
-        historyList.push({
-          time,
-          commit_message,
-          author_name,
-          hash,
-        })
-      })
-    }
+    // if (histories) {
+    //   histories.split('\n').forEach((line) => {
+    //     const [hash, author_name, time, commit_message] = line.split(' ')
+    //     historyList.push({
+    //       time,
+    //       commit_message,
+    //       author_name,
+    //       hash,
+    //     })
+    //   })
+    // }
 
     return {
       ...path2SectionMap[path],

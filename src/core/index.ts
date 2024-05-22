@@ -2,7 +2,6 @@ import { join } from 'path'
 
 import _jsonData from '~/../markdown/index.json'
 import { symbolsCount, symbolsTime } from '~/lib/count'
-import { getLastGitUpdateTime } from '~/lib/git'
 import {
   extractFirstHeadingText,
   parseYamlFrontMatterSync,
@@ -83,7 +82,7 @@ export const buildSectionData = () => {
 
       const meta = Object.assign({}, parseYamlFrontMatterSync(file), pageMeta)
       const fileOriginPath = join('markdown/', nextPath)
-      const gitUpdateTime = getLastGitUpdateTime(fileOriginPath)
+      // const gitUpdateTime = getLastGitUpdateTime(fileOriginPath)
 
       const item: PostItem = {
         path: appPath,
@@ -101,7 +100,7 @@ export const buildSectionData = () => {
 
         meta,
 
-        updatedAt: gitUpdateTime,
+        updatedAt: null,
       }
 
       section.items.push(item)

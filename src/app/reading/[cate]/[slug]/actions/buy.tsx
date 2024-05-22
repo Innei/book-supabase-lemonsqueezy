@@ -9,6 +9,7 @@ export async function getCheckoutURL(
   variantId: number,
   embed = false,
   next = '',
+  siteUrl = '',
 ) {
   configureLemonSqueezy()
 
@@ -37,11 +38,7 @@ export async function getCheckoutURL(
       },
       productOptions: {
         enabledVariants: [variantId],
-        redirectUrl: `${
-          process.env.VERCEL_URL
-            ? `https://${process.env.VERCEL_URL}`
-            : process.env.NEXT_PUBLIC_APP_URL
-        }/billing/callback?next=${encodeURIComponent(next)}&variantId=${variantId}`,
+        redirectUrl: `${siteUrl}/billing/callback?next=${encodeURIComponent(next)}&variantId=${variantId}`,
         receiptButtonText: 'Return',
         receiptThankYouNote: 'Thank you for signing up',
       },

@@ -35,7 +35,7 @@ export const NeedBuy: FC<{
           const checkoutUrl = await getCheckoutURL(
             +variantId,
             false,
-            window.location.href,
+            window.location.pathname,
             window.origin,
           )
           if (checkoutUrl) {

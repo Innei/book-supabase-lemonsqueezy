@@ -11,7 +11,9 @@
     "dev": "next dev -p 9988",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "db:migrate": "pnpm exec drizzle-kit migrate",
+    "db:push": "pnpm exec drizzle-kit push"
   },
   "bump": {
     "before": [
@@ -45,6 +47,7 @@
     "clsx": "2.1.1",
     "colorjs.io": "0.5.0",
     "devtools-detector": "2.0.17",
+    "drizzle-orm": "0.30.10",
     "foxact": "0.2.33",
     "framer-motion": "11.2.5",
     "globby": "^14.0.1",
@@ -58,6 +61,7 @@
     "next": "14.2.3",
     "next-seo": "6.5.0",
     "next-themes": "0.3.0",
+    "postgres": "3.4.4",
     "rc-modal-sheet": "0.2.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -84,6 +88,7 @@
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.19",
     "daisyui": "4.11.1",
+    "drizzle-kit": "0.21.2",
     "eslint": "9.3.0",
     "lint-staged": "15.2.4",
     "postcss-import": "16.1.0",

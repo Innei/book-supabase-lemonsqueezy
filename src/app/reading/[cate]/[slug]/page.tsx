@@ -1,3 +1,4 @@
+import { and, eq } from 'drizzle-orm'
 import type { Metadata, ResolvingMetadata } from 'next'
 
 import { createClient } from '@book/supabase'
@@ -6,7 +7,10 @@ import { listProducts } from '@lemonsqueezy/lemonsqueezy.js'
 import { CONFIG } from '~/app.config'
 import { Divider } from '~/components/divider'
 import { MainMarkdown } from '~/components/markdown'
+import { db } from '~/lib/db'
 import { configureLemonSqueezy } from '~/lib/lemonsqueezy'
+import { supabase } from '~/lib/supabase'
+import { schema } from '~/schema'
 
 import { GitHistory } from './components/git-history'
 import { NeedBuy } from './components/need-buy'
@@ -42,10 +46,12 @@ export default async (props: {
   const { text, count, readingTime, title, updatedAt, history, meta } =
     await getServerProps(props.params)
 
+  const supabase = createClient()
+
   if (meta.auth) {
     const {
       data: { user },
-    } = await createClient().auth.getUser()
+    } = await supabase.auth.getUser()
 
     if (!user) return <NeedLogin />
 
@@ -60,9 +66,19 @@ export default async (props: {
         (v) => v.id === meta.variantId,
       )
 
-      // TODO is buy
       if (variant) {
-        return <NeedBuy variantId={variant.id} />
+        const [isBuy] = await db
+          .select()
+          .from(schema.paidUsers)
+          .where(
+            and(
+              eq(schema.paidUsers.userId, user.id),
+              eq(schema.paidUsers.variantId, meta.variantId),
+            ),
+          )
+
+        // if (isBuy) return <div>Error when query table</div>
+        if (!isBuy) return <NeedBuy variantId={variant.id} />
       } else {
         return (
           <div>

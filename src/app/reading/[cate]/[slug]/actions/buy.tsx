@@ -5,7 +5,11 @@ import { createCheckout } from '@lemonsqueezy/lemonsqueezy.js'
 
 import { configureLemonSqueezy } from '~/lib/lemonsqueezy'
 
-export async function getCheckoutURL(variantId: number, embed = false) {
+export async function getCheckoutURL(
+  variantId: number,
+  embed = false,
+  next = '',
+) {
   configureLemonSqueezy()
 
   const {
@@ -35,7 +39,7 @@ export async function getCheckoutURL(variantId: number, embed = false) {
         enabledVariants: [variantId],
         redirectUrl: `${
           process.env.VERCEL_URL ?? process.env.NEXT_PUBLIC_APP_URL
-        }/billing/`,
+        }/billing/callback?next=${encodeURIComponent(next)}&variantId=${variantId}`,
         receiptButtonText: 'Go to Dashboard',
         receiptThankYouNote: 'Thank you for signing up to Lemon Stand!',
       },

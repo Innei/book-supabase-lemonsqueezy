@@ -4,6 +4,9 @@
     ".": {
       "react-server": "./server.ts",
       "default": "./client.ts"
+    },
+    "./server": {
+      "default": "./server.ts"
     }
   }
 }

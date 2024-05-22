@@ -11,6 +11,7 @@ Yet another template for write a book.
 - Nice UI
 - Mobile responsive
 - Supabase Auth and only auth can access some content
+- Lemon Squeezy for paid content (WIP)
 
 ## Using this template
 <!-- 

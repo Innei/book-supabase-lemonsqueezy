@@ -1,12 +1,15 @@
 import type { Metadata, ResolvingMetadata } from 'next'
 
 import { createClient } from '@book/supabase'
+import { listProducts } from '@lemonsqueezy/lemonsqueezy.js'
 
 import { CONFIG } from '~/app.config'
 import { Divider } from '~/components/divider'
 import { MainMarkdown } from '~/components/markdown'
+import { configureLemonSqueezy } from '~/lib/lemonsqueezy'
 
 import { GitHistory } from './components/git-history'
+import { NeedBuy } from './components/need-buy'
 import { NeedLogin } from './components/need-login'
 import { getServerProps } from './getServerProps'
 import { Hooks } from './hooks'
@@ -45,6 +48,29 @@ export default async (props: {
     } = await createClient().auth.getUser()
 
     if (!user) return <NeedLogin />
+
+    if (meta.variantId) {
+      configureLemonSqueezy()
+
+      const products = await listProducts({
+        filter: { storeId: process.env.LEMONSQUEEZY_STORE_ID },
+        include: ['variants'],
+      })
+      const variant = products.data?.included?.find(
+        (v) => v.id === meta.variantId,
+      )
+
+      // TODO is buy
+      if (variant) {
+        return <NeedBuy variantId={variant.id} />
+      } else {
+        return (
+          <div>
+            Error when fetching product, or configure the project not found
+          </div>
+        )
+      }
+    }
   }
 
   return (

@@ -12,6 +12,7 @@ import {
 interface PageMeta {
   hide?: boolean
   auth?: boolean
+  variantId?: string
 }
 export type PathWithMeta = [string, PageMeta?]
 

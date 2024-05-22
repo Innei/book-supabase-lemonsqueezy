@@ -23,6 +23,13 @@
         {
           "auth": true
         }
+      ],
+      [
+        "buy.md",
+        {
+          "auth": true,
+          "variantId": "216748"
+        }
       ]
     ],
     "slug": "extra",

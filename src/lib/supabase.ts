@@ -9,7 +9,7 @@ export const signWithGithub = async () => {
   await supabase.auth.signInWithOAuth({
     provider: 'github',
     options: {
-      redirectTo: `${origin}/login/callback`,
+      redirectTo: `${origin}/login/callback?next=${encodeURIComponent(window.location.pathname)}`,
     },
   })
 }

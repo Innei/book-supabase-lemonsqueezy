@@ -38,10 +38,12 @@ export async function getCheckoutURL(
       productOptions: {
         enabledVariants: [variantId],
         redirectUrl: `${
-          process.env.VERCEL_URL ?? process.env.NEXT_PUBLIC_APP_URL
+          process.env.VERCEL_URL
+            ? `https://${process.env.VERCEL_URL}`
+            : process.env.NEXT_PUBLIC_APP_URL
         }/billing/callback?next=${encodeURIComponent(next)}&variantId=${variantId}`,
-        receiptButtonText: 'Go to Dashboard',
-        receiptThankYouNote: 'Thank you for signing up to Lemon Stand!',
+        receiptButtonText: 'Return',
+        receiptThankYouNote: 'Thank you for signing up',
       },
     },
   )

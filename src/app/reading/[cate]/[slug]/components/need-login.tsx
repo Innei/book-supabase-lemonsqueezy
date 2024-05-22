@@ -8,7 +8,10 @@ export const NeedLogin = () => {
     <div className="mx-auto mt-48 flex flex-col items-center justify-center gap-4">
       <p>你需要登录才能查看这个页面</p>
 
-      <StyledButton className="bg-black" onClick={signWithGithub}>
+      <StyledButton
+        className="bg-black !text-white/80"
+        onClick={signWithGithub}
+      >
         <i className="icon-[mingcute--github-line]"></i> 使用 Github 登录
       </StyledButton>
     </div>

@@ -1,20 +1,21 @@
-# Book SSG Template
+# Book Template With Supabase Auth and Lemon Squeezy
 
-又一个文档 SSG 的模板。
-
-使用 Next.js App Router + Server Component 更大程度的优化了 SSG 生成产物的包体积。
-
-不管怎么说，还是以写作为重。本模板重心最终还是为了编写内容和最后的 UI 呈现。
-
-此模板的在线预览：
+一个知识付费的小册模板，使用 Lemon Squeezy 接入支付。
 
 ## 使用此模板
 
 ```bash
-git clone https://github.com/Innei/book-ssg-template
+git clone https://github.com/Innei/book-supabase-lemonsqueezy
 ```
 
 或者，你可以点击 Fork 此项目/使用此模板。
+
+## 环境变量
+
+| Name                    | Description            |
+| ----------------------- | ---------------------- |
+| `LEMONSQUEEZY_API_KEY`  | Lemon Squeezy API Key  |
+| `LEMONSQUEEZY_STORE_ID` | Lemon Squeezy Store Id |
 
 ## 配置项
 

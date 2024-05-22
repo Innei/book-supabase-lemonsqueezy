@@ -1,4 +1,4 @@
-# Book Template With Supabase Auth
+# Book Template With Supabase Auth and Lemon Squeezy
 
 Yet another template for write a book.
 

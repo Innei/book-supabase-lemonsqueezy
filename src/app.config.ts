@@ -21,8 +21,8 @@ export const CONFIG = {
 
 export const SEO = {
   title: {
-    absolute: 'Book SSG Template',
-    template: `%s | ${'Book SSG Template'}`,
+    absolute: 'Paid Book Template',
+    template: `%s | ${'Paid Book Template'}`,
   },
   metadataBase: new URL(CONFIG.urlBase),
   twitter: {

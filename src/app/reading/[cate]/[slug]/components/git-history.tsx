@@ -10,6 +10,7 @@ import { IonIosArrowDown } from '~/components/icons/arrow'
 
 export const GitHistory = ({ history }: { history: Git.TGitHistory[] }) => {
   const [isOpened, setIsOpened] = useState(false)
+  if (!history.length) return null
   return (
     <section className="mt-12" data-hide-print>
       <div

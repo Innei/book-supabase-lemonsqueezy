@@ -9,10 +9,8 @@ import { Divider } from '~/components/divider'
 import { MainMarkdown } from '~/components/markdown'
 import { db } from '~/lib/db'
 import { configureLemonSqueezy } from '~/lib/lemonsqueezy'
-import { supabase } from '~/lib/supabase'
 import { schema } from '~/schema'
 
-import { GitHistory } from './components/git-history'
 import { NeedBuy } from './components/need-buy'
 import { NeedLogin } from './components/need-login'
 import { getServerProps } from './getServerProps'
@@ -109,7 +107,7 @@ export default async (props: {
         </>
       )}
 
-      <GitHistory history={history} />
+      {/* <GitHistory history={history} /> */}
 
       {CONFIG.wip && (
         <>

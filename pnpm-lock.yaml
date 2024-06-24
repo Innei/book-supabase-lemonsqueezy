@@ -48,8 +48,8 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       colorjs.io:
-        specifier: 0.5.0
-        version: 0.5.0
+        specifier: 0.5.1
+        version: 0.5.1
       devtools-detector:
         specifier: 2.0.18
         version: 2.0.18
@@ -1795,8 +1795,8 @@ packages:
   colorette@2.0.20:
     resolution: {integrity: sha512-IfEDxwoWIjkeXL1eXcDiow4UbKjhLdq6/EuSVR9GMN7KVH3r9gQ83e73hsz1Nd1T3ijd5xv1wcWRYO+D6kCI2w==}
 
-  colorjs.io@0.5.0:
-    resolution: {integrity: sha512-qekjTiBLM3F/sXKks/ih5aWaHIGu+Ftel0yKEvmpbKvmxpNOhojKgha5uiWEUOqEpRjC1Tq3nJRT7WgdBOxIGg==}
+  colorjs.io@0.5.1:
+    resolution: {integrity: sha512-6EGsdo/R0IQ7u8eGJhvNwIMhbJvSKCZNWF0LW89INod0EhD7nNOnNZ1LF5v0gktF/99YJgiAGTLCBbXr8Ymg/g==}
 
   commander@12.1.0:
     resolution: {integrity: sha512-Vw8qHK3bZM9y/P10u3Vib8o/DdkvA2OtPtZvD871QKjy74Wj1WSKFILMPRPSdUSx5RFK1arlJzEtA4PkFgnbuA==}
@@ -6073,7 +6073,7 @@ snapshots:
 
   colorette@2.0.20: {}
 
-  colorjs.io@0.5.0: {}
+  colorjs.io@0.5.1: {}
 
   commander@12.1.0: {}
 

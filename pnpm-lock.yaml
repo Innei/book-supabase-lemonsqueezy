@@ -51,8 +51,8 @@ importers:
         specifier: 0.5.2
         version: 0.5.2
       devtools-detector:
-        specifier: 2.0.19
-        version: 2.0.19
+        specifier: 2.0.20
+        version: 2.0.20
       drizzle-orm:
         specifier: 0.30.10
         version: 0.30.10(@neondatabase/serverless@0.9.3)(@types/pg@8.11.6)(@types/react@18.3.3)(postgres@3.4.4)(react@18.3.1)
@@ -2088,8 +2088,8 @@ packages:
   devlop@1.1.0:
     resolution: {integrity: sha512-RWmIqhcFf1lRYBvNmr7qTNuyCt/7/ns2jbpp1+PalgE/rDQcBT0fioSMUpJ93irlUhC5hrg4cYqe6U+0ImW0rA==}
 
-  devtools-detector@2.0.19:
-    resolution: {integrity: sha512-aPTmF/bgPDed4IATotkFE3lM1iFduZ1gKNfUh85OobZg+F+zPtYfwmLGjXgMI2u0qYOdQTKnnd9R6TGMxnsgLA==}
+  devtools-detector@2.0.20:
+    resolution: {integrity: sha512-jFpdyH7Vhgc4ODj+2nNWkeXQg7eMcCB2BiMPKZn4mAT8CjEMOqVOtDvLm8JcmsI67qWpvSKW+/KMm4PiC4R7vQ==}
 
   didyoumean@1.2.2:
     resolution: {integrity: sha512-gxtyfqMg7GKyhQmb056K7M3xszy/myH8w+B4RT+QXBQsvAOdc3XymqDDPHx1BgPgsdAA5SIifona89YtRATDzw==}
@@ -6439,7 +6439,7 @@ snapshots:
     dependencies:
       dequal: 2.0.3
 
-  devtools-detector@2.0.19:
+  devtools-detector@2.0.20:
     dependencies:
       compare-versions: 3.6.0
 

@@ -136,8 +136,8 @@ importers:
         version: 0.9.1(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     devDependencies:
       '@iconify-json/mingcute':
-        specifier: 1.1.18
-        version: 1.1.18
+        specifier: 1.1.19
+        version: 1.1.19
       '@iconify/tailwind':
         specifier: 1.1.2
         version: 1.1.2
@@ -954,8 +954,8 @@ packages:
       '@vue/compiler-sfc':
         optional: true
 
-  '@iconify-json/mingcute@1.1.18':
-    resolution: {integrity: sha512-P5szgBqUMv8XVjZpbVT5eG1XtqpRPgfvZWxOR/uSqBwmVroHpxN5+nbLTHj9HJxL16msMsNbA294b69MNEQzaw==}
+  '@iconify-json/mingcute@1.1.19':
+    resolution: {integrity: sha512-O7h8mEQPUBfpsMagPI7ab/w5JzpijMMYmlabD43hyXyjh2LBfz+FlC+AcgSjQERx9+zb1dECb0FA34L5+VKs/Q==}
 
   '@iconify/tailwind@1.1.2':
     resolution: {integrity: sha512-ZgToKxxd7zF5T9NXPnY9APRF06ZjFF21H/bINzcbKTdeJzLrNLIoVaoePIUbWVQ2HAac5cAYEHPZO8ILSUe3bQ==}
@@ -5208,7 +5208,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@iconify-json/mingcute@1.1.18':
+  '@iconify-json/mingcute@1.1.19':
     dependencies:
       '@iconify/types': 2.0.0
 

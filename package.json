@@ -81,7 +81,7 @@
     "@innei/eslint-config-react-ts": "0.13.3",
     "@innei/prettier": "0.13.3",
     "@shikijs/transformers": "1.6.5",
-    "@tailwindcss/typography": "0.5.14",
+    "@tailwindcss/typography": "0.5.15",
     "@types/js-yaml": "4.0.9",
     "@types/node": "^20.14.15",
     "@types/react": "^18.3.4",

@@ -35,7 +35,7 @@
     "@book/supabase": "link:./packages/supabase",
     "@codesandbox/sandpack-react": "2.13.10",
     "@excalidraw/excalidraw": "0.17.6",
-    "@floating-ui/react-dom": "2.1.1",
+    "@floating-ui/react-dom": "2.1.2",
     "@lemonsqueezy/lemonsqueezy.js": "3.0.0",
     "@radix-ui/react-dialog": "1.0.5",
     "@radix-ui/react-tabs": "1.0.4",

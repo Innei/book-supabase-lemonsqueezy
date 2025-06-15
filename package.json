@@ -85,7 +85,7 @@
     "@types/js-yaml": "4.0.9",
     "@types/node": "^20.19.0",
     "@types/react": "^18.3.23",
-    "@types/react-dom": "^18.3.7",
+    "@types/react-dom": "^19.1.6",
     "autoprefixer": "^10.4.21",
     "daisyui": "4.11.1",
     "drizzle-kit": "0.21.4",

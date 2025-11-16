@@ -53,7 +53,7 @@
     "globby": "^14.0.2",
     "immer": "10.1.1",
     "jotai": "2.8.4",
-    "js-yaml": "4.1.0",
+    "js-yaml": "4.1.1",
     "katex": "0.16.22",
     "markdown-to-jsx": "npm:@innei/markdown-to-jsx@7.2.1-beta.6",
     "medium-zoom": "1.1.0",

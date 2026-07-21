@@ -92,7 +92,7 @@
     "eslint": "9.3.0",
     "lint-staged": "15.2.11",
     "postcss-import": "16.1.1",
-    "postcss-nested": "6.0.1",
+    "postcss-nested": "7.0.2",
     "postcss-preset-env": "9.5.16",
     "postcss-prune-var": "1.1.2",
     "prettier": "3.2.5",

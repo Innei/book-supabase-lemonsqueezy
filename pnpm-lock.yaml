@@ -166,7 +166,7 @@ importers:
         specifier: ^18.3.7
         version: 18.3.7(@types/react@18.3.31)
       autoprefixer:
-        specifier: ^10.4.27
+        specifier: ^10.5.4
         version: 10.5.4(postcss@8.4.49)
       daisyui:
         specifier: 4.11.1

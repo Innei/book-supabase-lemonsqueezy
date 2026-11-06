@@ -47,7 +47,7 @@
     "clsx": "2.1.1",
     "colorjs.io": "0.5.2",
     "devtools-detector": "2.0.25",
-    "drizzle-orm": "0.30.10",
+    "drizzle-orm": "0.45.2",
     "foxact": "0.2.55",
     "framer-motion": "11.2.14",
     "globby": "^14.0.2",

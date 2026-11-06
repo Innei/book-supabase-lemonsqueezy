@@ -21,8 +21,8 @@ importers:
         specifier: 2.1.9
         version: 2.1.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@lemonsqueezy/lemonsqueezy.js':
-        specifier: 3.0.0
-        version: 3.0.0
+        specifier: 4.0.0
+        version: 4.0.0
       '@radix-ui/react-dialog':
         specifier: 1.0.5
         version: 1.0.5(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -973,8 +973,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@lemonsqueezy/lemonsqueezy.js@3.0.0':
-    resolution: {integrity: sha512-EomAGkJLisI0/ptpe6a0plB++1Pqoe+FgMip4etfg2de05y58dkI+OA+HSdaFyXxpn1g0OtB50ofNVVoYQJX5A==}
+  '@lemonsqueezy/lemonsqueezy.js@4.0.0':
+    resolution: {integrity: sha512-xcY1/lDrY7CpIF98WKiL1ElsfoVhddP7FT0fw7ssOzrFqQsr44HgolKrQZxd9SywsCPn12OTOUieqDIokI3mFg==}
     engines: {node: '>=20'}
 
   '@lezer/common@1.2.3':
@@ -2557,6 +2557,7 @@ packages:
   eslint@9.3.0:
     resolution: {integrity: sha512-5Iv4CsZW030lpUqHBapdPo3MJetAPtejVW8B84GIcIIv8+ohFaddXsrn1Gn8uD9ijDb+kcYKFUVmC8qG8B2ORQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   esniff@2.0.1:
@@ -5304,7 +5305,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@lemonsqueezy/lemonsqueezy.js@3.0.0': {}
+  '@lemonsqueezy/lemonsqueezy.js@4.0.0': {}
 
   '@lezer/common@1.2.3': {}
 
